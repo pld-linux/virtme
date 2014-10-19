@@ -2,7 +2,7 @@ Summary:	An easy way to virtualize the running system
 Summary(pl.UTF-8):	Łatwy sposób wirtualizacji działającego systemu
 Name:		virtme
 Version:	0.0.1
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	https://www.kernel.org/pub/linux/utils/kernel/virtme/releases/%{name}-%{version}.tar.xz
