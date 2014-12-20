@@ -1,12 +1,12 @@
 Summary:	An easy way to virtualize the running system
 Summary(pl.UTF-8):	Łatwy sposób wirtualizacji działającego systemu
 Name:		virtme
-Version:	0.0.1
-Release:	2
+Version:	0.0.2
+Release:	1
 License:	GPL v2
 Group:		Applications/System
-Source0:	https://www.kernel.org/pub/linux/utils/kernel/virtme/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	f3515e42737c2b6104e488777902b8ef
+Source0:	https://www.kernel.org/pub/linux/utils/kernel/virtme/releases/%{name}-%{version}.tar
+# Source0-md5:	a64ac6427408b576af8c5f1997e4b9c2
 URL:		https://github.com/amluto/virtme
 BuildRequires:	python3-modules >= 1:3.3
 BuildRequires:	tar >= 1:1.22
@@ -55,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_datadir}/virtme-guest-0/virtme-loadmods
 %attr(755,root,root) %{_datadir}/virtme-guest-0/virtme-udhcpc-script
 %{py3_sitescriptdir}/virtme
-%{py3_sitescriptdir}/virtme-%{version}-py*.egg-info
+%{py3_sitescriptdir}/virtme-0.0.1-py*.egg-info
