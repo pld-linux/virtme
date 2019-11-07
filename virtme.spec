@@ -1,14 +1,15 @@
 Summary:	An easy way to virtualize the running system
 Summary(pl.UTF-8):	Łatwy sposób wirtualizacji działającego systemu
 Name:		virtme
-Version:	0.0.3
-Release:	4
+Version:	0.1.1
+Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	https://www.kernel.org/pub/linux/utils/kernel/virtme/releases/%{name}-%{version}.tar.xz
-# Source0-md5:	ffe1b57376df7e8e8426dfad7d7a7db7
+# Source0-md5:	4714904bafee4b46428724de47027794
 URL:		https://github.com/amluto/virtme
 BuildRequires:	python3-modules >= 1:3.3
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
@@ -48,10 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc DCO-1.1.txt README.md
 %attr(755,root,root) %{_bindir}/virtme-configkernel
 %attr(755,root,root) %{_bindir}/virtme-mkinitramfs
+%attr(755,root,root) %{_bindir}/virtme-prep-kdir-mods
 %attr(755,root,root) %{_bindir}/virtme-run
-%dir %{_datadir}/virtme-guest-0
-%attr(755,root,root) %{_datadir}/virtme-guest-0/virtme-init
-%attr(755,root,root) %{_datadir}/virtme-guest-0/virtme-loadmods
-%attr(755,root,root) %{_datadir}/virtme-guest-0/virtme-udhcpc-script
 %{py3_sitescriptdir}/virtme
 %{py3_sitescriptdir}/virtme-%{version}-py*.egg-info
