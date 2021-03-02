@@ -15,6 +15,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	python3 >= 1:3.3
 Requires:	qemu >= 1.6
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
